@@ -191,12 +191,19 @@
     margin-left: 5px;
   }
 
-  ul li {
-    list-style-type: none;
-  }
-  ul li:before {
-    content:"\00BB \0020";
-  }
+/* ul li { */
+/*   list-style-type: none; */
+/* } */
+  
+/* ul li:before { */
+/*   content:"\00BB \0020"; */
+/* } */
+
+/* Restore normal, clean bullet points (you can change "disc" to "none" if you prefer no bullets) */
+ul li {
+  list-style-type: disc;     /* or "circle", "square", or "none" */
+  margin: 8px 0;
+}
 
   #nav ul li:before, .posts_listing li:before {
     content:'';
